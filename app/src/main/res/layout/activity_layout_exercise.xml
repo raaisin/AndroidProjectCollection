@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".LayoutExercise">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="235dp"
+                    android:layout_height="77dp"
+                    app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.019"
+                    app:srcCompat="@drawable/screenshot_2024_02_15_094434" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="126dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="50dp"
+                    android:fillViewport="true"
+                    android:measureAllChildren="false"
+                    android:scrollbars="none"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.2"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/l1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/asher"
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:scaleType="fitCenter"
+                                    app:srcCompat="@drawable/boss_asher"
+                                    tools:srcCompat="@drawable/boss_asher" />
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="119dp"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1"
+                                    android:text="asher"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="120dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/emman"
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:scaleType="fitStart"
+                                    app:srcCompat="@drawable/emmanuel"
+                                    tools:srcCompat="@drawable/emmanuel" />
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="104dp"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1"
+                                    android:text="emman"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="120dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/econar"
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:scaleType="fitStart"
+                                    app:srcCompat="@drawable/econar"
+                                    tools:srcCompat="@drawable/econar" />
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1"
+                                    android:text="econar"
+                                    android:textAlignment="center" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/ardel"
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:scaleType="fitStart"
+                                    app:srcCompat="@drawable/ardel"
+                                    tools:srcCompat="@drawable/ardel" />
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    android:layout_width="103dp"
+                                    android:layout_height="35dp"
+                                    android:layout_weight="1"
+                                    android:text="ardel"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.49"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/post1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutPost1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/postImage1">
+
+                                <Button
+                                    android:id="@+id/btnLike1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:layout_marginHorizontal="4dp"
+                                    android:layout_marginVertical="4dp"
+                                    android:layout_marginStart="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:paddingHorizontal="4dp"
+                                    android:paddingLeft="4dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingEnd="4dp"
+                                    android:paddingRight="4dp"
+                                    android:text="Like" />
+
+                                <Button
+                                    android:id="@+id/btnShare1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:layout_marginHorizontal="4dp"
+                                    android:layout_marginVertical="4dp"
+                                    android:layout_marginStart="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:paddingHorizontal="4dp"
+                                    android:paddingLeft="4dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingEnd="4dp"
+                                    android:paddingRight="4dp"
+                                    android:text="Share" />
+
+                                <EditText
+                                    android:id="@+id/comment1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="1"
+                                    android:contextClickable="true"
+                                    android:ems="10"
+                                    android:inputType="textPersonName"
+                                    android:text="comment" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/postImage1"
+                                android:layout_width="0dp"
+                                android:layout_height="230dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/boar"
+                                app:layout_constraintBottom_toTopOf="@+id/linearLayoutPost1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/linearLayoutRow1"
+                                app:srcCompat="@drawable/boar"
+                                tools:srcCompat="@drawable/boar" />
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutRow1"
+                                android:layout_width="406dp"
+                                android:layout_height="31dp"
+                                android:orientation="horizontal"
+                                app:layout_constraintBottom_toTopOf="@+id/postImage1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/post_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="358dp"
+                                    android:text="Post#1" />
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ardel" />
+
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/post2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutPost2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/postImage2">
+
+                                <Button
+                                    android:id="@+id/btnLike2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:layout_marginHorizontal="4dp"
+                                    android:layout_marginVertical="4dp"
+                                    android:layout_marginStart="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:paddingHorizontal="4dp"
+                                    android:paddingLeft="4dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingEnd="4dp"
+                                    android:paddingRight="4dp"
+                                    android:text="Like" />
+
+                                <Button
+                                    android:id="@+id/btnShare2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:layout_marginHorizontal="4dp"
+                                    android:layout_marginVertical="4dp"
+                                    android:layout_marginStart="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:paddingHorizontal="4dp"
+                                    android:paddingLeft="4dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingEnd="4dp"
+                                    android:paddingRight="4dp"
+                                    android:text="Share" />
+
+                                <EditText
+                                    android:id="@+id/comment2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="1"
+                                    android:contextClickable="true"
+                                    android:ems="10"
+                                    android:inputType="textPersonName"
+                                    android:text="comment" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/postImage2"
+                                style="@style/postImage2"
+                                android:src="@drawable/lighthouse"
+                                app:layout_constraintBottom_toTopOf="@+id/linearLayoutPost2"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/linearLayoutRow2"
+                                app:srcCompat="@drawable/lighthouse"
+                                tools:srcCompat="@drawable/lighthouse" />
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutRow2"
+                                style="@style/linearLayout2"
+                                app:layout_constraintBottom_toTopOf="@+id/postImage2"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/post_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="358dp"
+                                    android:text="Post#2" />
+
+                                <ImageView
+                                    android:id="@+id/imageView4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ardel" />
+
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/post3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutPost3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/postImage3">
+
+                                <Button
+                                    android:id="@+id/btnLike3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:layout_marginHorizontal="4dp"
+                                    android:layout_marginVertical="4dp"
+                                    android:layout_marginStart="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:paddingHorizontal="4dp"
+                                    android:paddingLeft="4dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingEnd="4dp"
+                                    android:paddingRight="4dp"
+                                    android:text="Like" />
+
+                                <Button
+                                    android:id="@+id/btnShare3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:layout_marginHorizontal="4dp"
+                                    android:layout_marginVertical="4dp"
+                                    android:layout_marginStart="4dp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:paddingHorizontal="4dp"
+                                    android:paddingLeft="4dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingEnd="4dp"
+                                    android:paddingRight="4dp"
+                                    android:text="Share" />
+
+                                <EditText
+                                    android:id="@+id/comment3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:contextClickable="true"
+                                    android:ems="10"
+                                    android:inputType="textPersonName"
+                                    android:text="comment" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/postImage3"
+                                style="@style/postImage2"
+                                android:layout_width="0dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/lighthouse"
+                                app:layout_constraintBottom_toTopOf="@+id/linearLayoutPost3"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                                app:srcCompat="@drawable/fort__"
+                                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout3"
+                                style="@style/linearLayout2"
+                                app:layout_constraintBottom_toTopOf="@+id/postImage3"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/post_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="358dp"
+                                    android:text="Post#3" />
+
+                                <ImageView
+                                    android:id="@+id/imageView5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ardel" />
+
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

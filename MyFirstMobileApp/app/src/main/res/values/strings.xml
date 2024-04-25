@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyFirstMobileApp</string>
+    <string name = "helloWorld"> Hello World! </string>
+    <string name = "name"> RUSSELL JOSHUA T. PALMA </string>
+    <string name = "bruh"> BRUH </string>
+    <string name = "button"> CLICK </string>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuChange"
+        android:title="Change">
+        <menu>
+            <item
+                android:id="@+id/menuColor"
+                android:title="Color" />
+            <item
+                android:id="@+id/menuSize"
+                android:title="Size" />
+            <item
+                android:id="@+id/menuText"
+                android:title="Text" />
+            <item
+                android:id="@+id/menuTextColor"
+                android:title="Text Color" />
+            <item
+                android:id="@+id/menuVisibility"
+                android:title="Visibility" />
+            <item
+                android:id="@+id/menuKurukuru"
+                android:title="Spinny" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menuReset"
+        android:title="Reset" />
+    <item
+        android:id="@+id/menuExit"
+        android:title="Exit" />
+</menu>

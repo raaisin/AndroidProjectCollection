@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="postImage2">
+        <item name="android:layout_width">410dp</item>
+        <item name="android:layout_height">282dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="linearLayout2">
+        <item name="android:layout_width">406dp</item>
+        <item name="android:layout_height">31dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+</resources>
