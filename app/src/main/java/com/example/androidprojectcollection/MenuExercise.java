@@ -9,6 +9,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -17,15 +19,12 @@ public class MenuExercise extends AppCompatActivity {
     Button btnChanger;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_exercise);
 
         btnChanger = findViewById(R.id.btnTransformingButton);
-
 
     }
 
@@ -62,7 +61,7 @@ public class MenuExercise extends AppCompatActivity {
         else if(item.getItemId() == R.id.menuColor){
             int color = 0;
             if(color == 0){
-                btnChanger.setBackgroundColor(Color.BLUE);
+                btnChanger.setBackgroundColor(getColor(R.color.grey));
                 color = 1;
             }
             else if(color == 1){
@@ -74,7 +73,7 @@ public class MenuExercise extends AppCompatActivity {
         else if(item.getItemId() == R.id.menuSize){
 
             btnChanger.setScaleX(2);
-            btnChanger.setScaleY(2);
+            btnChanger.setScaleY(3);
 
         }
         else if(item.getItemId() == R.id.menuText){
@@ -86,6 +85,12 @@ public class MenuExercise extends AppCompatActivity {
         }
         else if(item.getItemId() == R.id.menuVisibility){
             btnChanger.setVisibility(View.GONE);
+        }
+
+        else if(item.getItemId() == R.id.menuKurukuru){
+            final Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.milkshake);
+            btnChanger.setAnimation(myAnim);
+            btnChanger.startAnimation(myAnim);
         }
 
         return true;
