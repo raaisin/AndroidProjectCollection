@@ -3,6 +3,7 @@ package com.example.androidprojectcollection;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     Button btn6;
     Button btn7;
     Button btn8;
+
+    Button btn9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -146,6 +149,23 @@ public class MainActivity extends AppCompatActivity {
                 );
 
                 startActivity(intent8);
+
+            }
+
+
+        });
+
+        btn9 = (Button) findViewById(R.id.btnMaps);
+        btn9.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view){
+                Intent intent9 = new Intent(
+                        MainActivity.this, MapsExercise.class
+                        //Intent.ACTION_VIEW, Uri.parse("geo:35.7040744,139.5577317")
+                );
+
+                startActivity(intent9);
 
             }
 
